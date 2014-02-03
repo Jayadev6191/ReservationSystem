@@ -6,7 +6,7 @@ if (isset($_POST['username'],$_POST['password'],$_POST['submit']))
 $username = $_POST['username'];
 $password = $_POST['password'];
 $error=array();
-$username = $_POST['username'];
+$_SESSION['currentuser']=$username;
 $db_host= "localhost";
 $db_username="root";
 $db_pass="root";

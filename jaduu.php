@@ -69,6 +69,7 @@
         </div>
       </div>
     </nav>
+    <br><br>
 
 <div id="big_wrapper">	
 	<div id="container1">
@@ -107,15 +108,10 @@
 
 			<input type="hidden"  class="form-control" size=12 id="postdate" name="finaldate" value="<?php if(isset($_POST['finaldate'])){echo $_POST['finaldate'];} ?>"/><br />
 			<input type="hidden"  class="form-control" size=12 id="posttime" name="finaltime" value="<?php if(isset($_POST['finaltime'])){echo $_POST['finaltime'];} ?>"/><br />
+
+			<!-- <div id="appts"></div> -->
 	</div>
 
-
-<!--<div>
-	<input  name="finaldate" id="one" value="<?php if(isset($_POST['finaldate'])){echo $_POST['finaldate'];} ?>"/> <br/>
-	<input type="hidden" name="finaltime" id="two" value="<?php if(isset($_POST['finaltime'])){echo $_POST['finaltime'];} ?>"/><br/>
-	<input type="hidden" name="slotchecker" id="sc" value=""/><br/>
-	<input type="hidden" name="username" id="uname" value="<?php if(isset($_SESSION['currentuser'])){$username=$_SESSION['currentuser'];echo $username; }?>"/><br/>
-</div>-->
 </div>
 
 

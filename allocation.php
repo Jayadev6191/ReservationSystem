@@ -37,6 +37,5 @@ if($slotchecker)
 
 }
 
-
 ?>
 

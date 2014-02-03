@@ -1,15 +1,3 @@
-/*$(document).ready(function(){
-var username=$("#uname").val();
-$.ajax({
-			type:'POST',
-			url:'appointments.php',
-			data:{username:username},
-			success:function(appt){
-			$('#stable').html(appt);
-			}				
-});
-});*/
-
 $(document).ready(function(){
 $("#date").click(function(){
 $("#date").val('');
@@ -116,9 +104,24 @@ $('tr td button').click(function(){
 	});
 });
    
-   
- 
+/* generating appointments table for a particular function*/
+$(document).ready(function(){
+var username=$("#welcome_message").html();
+//jQuery.load()
+$.post( 
+             "appointments.php",
+             { name: name },
+             function(data) {
+                $('#appts').html(data);
+                
+             }
 
+          );
+
+});
+
+    
+/* clicking submit */
 $(document).ready(function(){
 $("#sub").click(function(){
 
