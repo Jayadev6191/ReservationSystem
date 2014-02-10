@@ -1,13 +1,15 @@
 <?php
 	session_start();
-	if(!$_SESSION['currentuser'])
+	if(!isset($_SESSION['currentuser']))
 	{
-		header("location:index.php?problem=notLoggedIn");
+		header("location:index.php");
 		exit();
 	}
 	if(isset($_SESSION['currentuser'])){
 	$username=$_SESSION['currentuser'];
 	$welcome= '<strong id="welcome_message">welcome '.$username.'</strong>';
+	
+
 	}
 ?>
 

@@ -78,8 +78,8 @@ ob_flush();
 ?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/register.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/simple-sidebar.css" rel="stylesheet">
@@ -101,7 +101,7 @@ ob_flush();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://startbootstrap.com">Reservation System</a>
+          <a class="navbar-brand" href="">Reservation System</a>
         </div>
 
    
@@ -121,14 +121,15 @@ ob_flush();
 	  <div class="row">
         <div class="col-md-6 col-md-offset-3">
 			
-            <form  method="post" accept-charset="utf-8" class="form" role="form">   <legend>Login</legend>
-                    
-                    <br>
-                    <input type="text" id="username" name="username" value="" class="form-control input-lg" placeholder="username"  /><br>
-					         <input type="password" id="password" name="password" value="" class="form-control input-lg" placeholder="Password"  /><br>
+            <form  method="post" accept-charset="utf-8" class="form" role="form" ><legend>Login</legend>
+                  <br>
+                  <input type="text" id="username" name="username" value="" class="form-control input-lg" placeholder="username"  /><br>
+					       <input type="password" id="password" name="password" value="" class="form-control input-lg" placeholder="Password"  /><br>
               
-                  <button class="btn btn-lg btn-primary btn-block signup-btn" id="login" type="submit" name="submit">Login
-			           </button>
+                  <button class="btn btn-lg btn-block signup-btn" id="login" type="submit" name="submit">login</button><br>
+                  <p class="pull-right">Not a registered user yet? <input type="button" class="btn btn-danger" value="Register Now" onClick="window.location.href='register.php'"></p>
+                  <br>
+                  
             </form>          
           </div>
 	  </div><!--row ended-->            

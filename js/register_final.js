@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	$('#create').click(function(){
-		
+	$('#reg').click(function(){
+	    window.location.href="register.php";
+		//return false;
 		
 	});
 });
